@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Entitiyes.Dto;
+using Entitiyes.DTO;
 using Entitiyes.Models;
 
 
@@ -13,6 +14,8 @@ namespace WebApiBook.Utilities.AutoMapper
             CreateMap<Meeting, MeetingDto>();
             CreateMap<RoomDto, Room>();
             CreateMap<Room, RoomDto>();
+            CreateMap<UserForRegistrationDto, User>();
+            
         }
     }
 }

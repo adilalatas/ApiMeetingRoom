@@ -10,5 +10,6 @@ namespace Services.Contracts
     {
         IMeetingService MeetingService { get; }
         IRoomService RoomService { get; }
+        IAuthenticationService AuthenticationService { get; }
     }
 }

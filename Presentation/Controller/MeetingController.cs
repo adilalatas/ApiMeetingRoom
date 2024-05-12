@@ -1,5 +1,6 @@
 ﻿using Entitiyes.Dto;
 using Entitiyes.Exceptions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.Controller.ActionFilters;
 using Services.Contracts;
@@ -7,6 +8,7 @@ using Services.Contracts;
 
 namespace Presentation.Controller
 {
+    [Authorize]
     [ServiceFilter(typeof(LogFilterAttribute))]
     [ApiController]
     [Route("api/Meeting")]
