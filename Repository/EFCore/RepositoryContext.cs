@@ -14,10 +14,12 @@ namespace Repository.EFCore
         public RepositoryContext(DbContextOptions options):base(options) { }
        
         public DbSet<Meeting> Meetings { get; set; }
+        public DbSet<Room> Room { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new BookConfig());
+            modelBuilder.ApplyConfiguration(new MeetingConfig());
+            modelBuilder.ApplyConfiguration(new RoomConfig());
         }
     }
 }

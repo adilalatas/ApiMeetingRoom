@@ -106,3 +106,49 @@
 2024-05-12 15:55:53.9960 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
 2024-05-12 15:55:53.9960 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\Source\Repos\adilalatas\WebApiBook\WebApiBook\nlog.config
 2024-05-12 15:55:53.9960 Info Configuration initialized.
+2024-05-12 16:34:30.2526 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-12 16:34:30.2611 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-12 16:34:30.2611 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\source\repos\adilalatas\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-12 16:34:30.2611 Info Configuration initialized.
+2024-05-12 16:34:30.5947 Info AppDomain Shutting down. LogFactory closing...
+2024-05-12 16:34:30.5947 Info LogFactory has been closed.
+2024-05-12 16:36:55.1137 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-12 16:36:55.1218 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-12 16:36:55.1218 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\source\repos\adilalatas\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-12 16:36:55.1218 Info Configuration initialized.
+2024-05-12 16:36:55.6977 Info AppDomain Shutting down. LogFactory closing...
+2024-05-12 16:36:55.7023 Info LogFactory has been closed.
+2024-05-12 16:37:02.8587 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-12 16:37:02.8587 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-12 16:37:02.8719 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\source\repos\adilalatas\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-12 16:37:02.8719 Info Configuration initialized.
+2024-05-12 16:37:03.3966 Info AppDomain Shutting down. LogFactory closing...
+2024-05-12 16:37:03.4011 Info LogFactory has been closed.
+2024-05-12 16:37:07.5007 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-12 16:37:07.5177 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-12 16:37:07.5177 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\source\repos\adilalatas\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-12 16:37:07.5324 Info Configuration initialized.
+2024-05-12 16:38:35.9937 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-12 16:38:36.0101 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-12 16:38:36.0170 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\source\repos\adilalatas\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-12 16:38:36.0289 Info Configuration initialized.
+2024-05-12 16:42:53.7775 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-12 16:42:53.7963 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-12 16:42:53.7963 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\source\repos\adilalatas\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-12 16:42:53.8175 Info Configuration initialized.
+2024-05-12 16:44:41.2853 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-12 16:44:41.3020 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-12 16:44:41.3094 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\source\repos\adilalatas\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-12 16:44:41.3094 Info Configuration initialized.
+2024-05-12 16:49:34.5720 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-12 16:49:34.5879 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-12 16:49:34.5948 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\source\repos\adilalatas\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-12 16:49:34.5948 Info Configuration initialized.
+2024-05-12 16:52:46.3592 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-12 16:52:46.3791 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-12 16:52:46.3865 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\source\repos\adilalatas\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-12 16:52:46.3865 Info Configuration initialized.
+2024-05-12 16:53:59.5795 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-12 16:53:59.5958 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-12 16:53:59.5958 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\source\repos\adilalatas\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-12 16:53:59.6103 Info Configuration initialized.

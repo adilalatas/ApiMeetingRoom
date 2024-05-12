@@ -9,5 +9,6 @@ namespace Services.Contracts
     public interface IServiceManager
     {
         IMeetingService MeetingService { get; }
+        IRoomService RoomService { get; }
     }
 }

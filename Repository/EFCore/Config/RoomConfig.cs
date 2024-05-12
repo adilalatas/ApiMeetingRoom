@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Repository.EFCore.Config
 {
-    public class BookConfig :IEntityTypeConfiguration<Meeting>
+    public class RoomConfig : IEntityTypeConfiguration<Room>
     {
-        public void Configure(EntityTypeBuilder<Meeting> builder) {
-
-           
+        public void Configure(EntityTypeBuilder<Room> builder)
+        {
+      
         }
     }
 }

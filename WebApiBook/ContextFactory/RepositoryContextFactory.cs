@@ -12,7 +12,7 @@ namespace WebApiBook.ContextFactory
             var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build();
 
             //DbContextOptionsBuilder                                                                                                          //Migration nerde oluşmasını istiyorsak
-            var builder = new DbContextOptionsBuilder<RepositoryContext>().UseSqlServer(configuration.GetConnectionString("sqlConnection"),prj =>prj.MigrationsAssembly("WebApiBook"));
+            var builder = new DbContextOptionsBuilder<RepositoryContext>().UseSqlServer(configuration.GetConnectionString("sqlConnection"),prj =>prj.MigrationsAssembly("ApiMeetingRoom"));
 
             return new RepositoryContext(builder.Options);
         }

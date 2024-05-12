@@ -9,6 +9,7 @@ namespace Repository.Contracts
     public interface IRepositoryManager
     {
         IMeetingRepository Meeting { get; }
+        IRoomRepository Room { get; }
         Task SaveAsync();
     }
 }

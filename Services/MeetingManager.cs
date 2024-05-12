@@ -60,7 +60,7 @@ namespace Services
         private async Task<Meeting> GetOneMeetingAndCheck(int id, bool trackChanges){
             var entity = await _manager.Meeting.GetOneMeetingById(id, trackChanges);
             if (entity is null)
-                throw new BookNotFoundException(id);
+                throw new MeetingFoundException(id);
 
             return entity;
 

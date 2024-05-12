@@ -5,6 +5,7 @@ namespace Entitiyes.Dto
     {
         public int Id { get; set; }
         public int CreateUserId { get; set; }
+        public int RoomId { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
