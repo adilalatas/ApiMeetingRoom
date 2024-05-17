@@ -2,6 +2,7 @@
 using Entitiyes.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
 using Repository.Contracts;
+using Repository.EFCore.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,8 @@ namespace Repository.EFCore
         {
           var meeting =  await FindAll(trackChanges)
         .OrderBy(x => x.Id)
+        .MeetingSearch(meetingParameters.SearchTerm)
+        .ShortMeeting(meetingParameters.OrderBy)
         .ToListAsync();
             return PagedList<Meeting>.ToPagedList(meeting, meetingParameters.PageNumber, meetingParameters.PageSize);
         }
