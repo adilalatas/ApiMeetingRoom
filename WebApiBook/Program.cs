@@ -27,6 +27,7 @@ builder.Services.ConfigureActionFilters();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
+builder.Services.ConfigureCors();
 builder.Services.ConfigureJWT(builder.Configuration);
 builder.Services.AddSwaggerGen(c =>
 {
@@ -75,6 +76,7 @@ app.UseSwaggerUI(c =>
     c.RoutePrefix = string.Empty;
     c.OAuthClientId("swagger-client");
 });
+app.UseCors("CorsPolicy");
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

@@ -2,6 +2,7 @@
 using Entitiyes.Dto;
 using Entitiyes.Exceptions;
 using Entitiyes.Models;
+using Entitiyes.RequestFeatures;
 using Repository.Contracts;
 using Services.Contracts;
 
@@ -36,10 +37,16 @@ namespace Services
             await _manager.SaveAsync();
         }
 
-        public async Task<IEnumerable<MeetingDto>> GetAllMeetings(bool trackChanges)
+        public async Task<IEnumerable<MeetingDto>> GetAllMeetings( bool trackChanges)
         {
-           var books =await _manager.Meeting.GetAllMeetings(trackChanges);
-            return _mapper.Map<IEnumerable<MeetingDto>>(books);
+           var meeting =await _manager.Meeting.GetAllMeetings(trackChanges);
+            return _mapper.Map<IEnumerable<MeetingDto>>(meeting);
+        }   
+        public async Task<(IEnumerable<MeetingDto> meetings, MetaData metaData)> GetAllMeetingsPage(MeetingParameters meetingParameters,bool trackChanges)
+        {
+           var meetingMetaData = await _manager.Meeting.GetAllMeetingsPage(meetingParameters, trackChanges);
+            var meetingDto = _mapper.Map<IEnumerable<MeetingDto>>(meetingMetaData);
+            return (meetingDto, meetingMetaData.MetaData);
         }
 
         public async Task<MeetingDto> GetOneMeetingById(int id, bool trackChanges)

@@ -41,7 +41,7 @@ namespace WebApiBook.Migrations
 
                     b.HasKey("id");
 
-                    b.ToTable("Books");
+                    b.ToTable("meeting");
 
                     b.HasData(
                         new

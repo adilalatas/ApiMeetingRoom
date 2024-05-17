@@ -1,14 +1,16 @@
 ﻿using Entitiyes.Dto;
 using Entitiyes.Exceptions;
+using Entitiyes.RequestFeatures;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.Controller.ActionFilters;
 using Services.Contracts;
+using System.Text.Json;
 
 
 namespace Presentation.Controller
 {
-    [Authorize]
+    //[Authorize]
     [ServiceFilter(typeof(LogFilterAttribute))]
     [ApiController]
     [Route("api/Room")]
@@ -20,11 +22,19 @@ namespace Presentation.Controller
             _manager = manager;
         }
 
-        [HttpGet]
+        [HttpGet("all")]
         public async Task<IActionResult> GetAllRoom()
         {
-            var Meeting =await _manager.RoomService.GetAllRooms(false);
+            var Meeting =await _manager.RoomService.GetAllRoom(false);
             return Ok(Meeting);
+        }
+            
+        [HttpGet("page")]
+        public async Task<IActionResult> GetAllRoomPage([FromQuery] RoomParameters roomParameters)
+        {
+            var res =await _manager.RoomService.GetAllRoomPage(roomParameters, false);
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(res.metaData));
+            return Ok(res.rooms);
         }
 
         [HttpGet("{id}")]

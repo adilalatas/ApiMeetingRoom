@@ -1,5 +1,6 @@
 ﻿using Entitiyes.Dto;
 using Entitiyes.Models;
+using Entitiyes.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,8 @@ namespace Repository.Contracts
 {
     public interface IRoomRepository : IRepositoryBase<Room>
     {
-        Task<IEnumerable<Room>> GetAllRooms(bool trackChanges);
+        Task<IEnumerable<Room>> GetAllRoom(bool trackChanges);
+        Task<PagedList<Room>> GetAllRoomPage(RoomParameters roomParameters,bool trackChanges);
         Task<Room> GetOneRoomById(int id,bool trackChanges);
         void CreateOneRoom(Room room);
         void UpdateOneRoom(Room room);

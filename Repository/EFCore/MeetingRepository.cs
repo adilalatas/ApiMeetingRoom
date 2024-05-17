@@ -1,4 +1,5 @@
 ﻿using Entitiyes.Models;
+using Entitiyes.RequestFeatures;
 using Microsoft.EntityFrameworkCore;
 using Repository.Contracts;
 using System;
@@ -18,7 +19,14 @@ namespace Repository.EFCore
         public void CreateOneMeeting(Meeting meeting) => Create(meeting);   
         public void DeleteOneMeeting(Meeting meeting) => Delete(meeting);
         public void UpdateOneMeeting(Meeting meeting) => Update(meeting);
-        public async Task<IEnumerable<Meeting>> GetAllMeetings(bool trackChanges) => await FindAll(trackChanges).ToListAsync();
+        public async Task<IEnumerable<Meeting>> GetAllMeetings(bool trackChanges) => await FindAll(trackChanges).OrderBy(x => x.Id).ToListAsync();
+        public async Task<PagedList<Meeting>> GetAllMeetingsPage(MeetingParameters meetingParameters, bool trackChanges)
+        {
+          var meeting =  await FindAll(trackChanges)
+        .OrderBy(x => x.Id)
+        .ToListAsync();
+            return PagedList<Meeting>.ToPagedList(meeting, meetingParameters.PageNumber, meetingParameters.PageSize);
+        }
         public async Task<Meeting> GetOneMeetingById(int id, bool trackChanges) =>await FindByConddition(x=>x.Id.Equals(id),trackChanges).SingleOrDefaultAsync();
 
 

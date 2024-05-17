@@ -12,7 +12,7 @@ namespace WebApiBook.Migrations
         {
             migrationBuilder.RenameColumn(
                 name: "id",
-                table: "Books",
+                table: "meeting",
                 newName: "Id");
         }
 
@@ -21,7 +21,7 @@ namespace WebApiBook.Migrations
         {
             migrationBuilder.RenameColumn(
                 name: "Id",
-                table: "Books",
+                table: "meeting",
                 newName: "id");
         }
     }

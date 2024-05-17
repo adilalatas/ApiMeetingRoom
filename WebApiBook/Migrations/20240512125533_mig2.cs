@@ -12,7 +12,7 @@ namespace WebApiBook.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Books");
+                name: "meeting");
 
             migrationBuilder.CreateTable(
                 name: "Meetings",
@@ -40,7 +40,7 @@ namespace WebApiBook.Migrations
                 name: "Meetings");
 
             migrationBuilder.CreateTable(
-                name: "Books",
+                name: "meeting",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -54,7 +54,7 @@ namespace WebApiBook.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Books",
+                table: "meeting",
                 columns: new[] { "Id", "price", "title" },
                 values: new object[] { 1, 75m, "Karagöz Hacıvat" });
         }

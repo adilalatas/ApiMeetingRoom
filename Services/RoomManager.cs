@@ -2,6 +2,7 @@
 using Entitiyes.Dto;
 using Entitiyes.Exceptions;
 using Entitiyes.Models;
+using Entitiyes.RequestFeatures;
 using Repository.Contracts;
 using Services.Contracts;
 
@@ -36,10 +37,17 @@ namespace Services
             await _manager.SaveAsync();
         }
 
-        public async Task<IEnumerable<RoomDto>> GetAllRooms(bool trackChanges)
+        public async Task<IEnumerable<RoomDto>> GetAllRoom(bool trackChanges)
         {
-            var room = await _manager.Room.GetAllRooms(trackChanges);
+            var room = await _manager.Room.GetAllRoom(trackChanges);
             return _mapper.Map<IEnumerable<RoomDto>>(room);
+        }  
+        public async Task<(IEnumerable<RoomDto> rooms, MetaData metaData)> GetAllRoomPage(RoomParameters roomParameters,bool trackChanges)
+        {
+           var roomMetaData = await _manager.Room.GetAllRoomPage(roomParameters,trackChanges);
+            var roomDto=  _mapper.Map<IEnumerable<RoomDto>>(roomMetaData);
+            return (roomDto, roomMetaData.MetaData);
+
         }
 
         public async Task<Room> GetOneRoomById(int id, bool trackChanges)
