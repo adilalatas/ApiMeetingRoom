@@ -10,6 +10,7 @@ namespace Repository.Contracts
     {
         IMeetingRepository Meeting { get; }
         IRoomRepository Room { get; }
+        IUserRepository User { get; }
         Task SaveAsync();
     }
 }

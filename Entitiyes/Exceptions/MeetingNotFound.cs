@@ -2,7 +2,7 @@
 {
     public sealed class MeetingNotFoundException : NotFoundException
     {
-        public MeetingNotFoundException(int id) : base($"Toplantı Bulunamadı: {id}")
+        public MeetingNotFoundException(Guid id) : base($"Toplantı Bulunamadı: {id}")
         {
         }
     }

@@ -27,7 +27,7 @@ namespace Repository.EFCore
             return PagedList<Room>.ToPagedList(room, roomParameters.PageNumber, roomParameters.PageSize);
 
          }
-        public async Task<Room> GetOneRoomById(int id, bool trackChanges) => await FindByConddition(x => x.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
+        public async Task<Room> GetOneRoomById(Guid id, bool trackChanges) => await FindByConddition(x => x.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
 
 
 

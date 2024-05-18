@@ -13,7 +13,7 @@ namespace Repository.Contracts
     {
         Task<IEnumerable<Room>> GetAllRoom(bool trackChanges);
         Task<PagedList<Room>> GetAllRoomPage(RoomParameters roomParameters,bool trackChanges);
-        Task<Room> GetOneRoomById(int id,bool trackChanges);
+        Task<Room> GetOneRoomById(Guid id,bool trackChanges);
         void CreateOneRoom(Room room);
         void UpdateOneRoom(Room room);
         void DeleteOneRoom(Room room);

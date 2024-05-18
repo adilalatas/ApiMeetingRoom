@@ -9,11 +9,11 @@ using Repository.EFCore;
 
 #nullable disable
 
-namespace WebApiBook.Migrations
+namespace ApiMeetingRoom.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20240512152503_addRole")]
-    partial class addRole
+    [Migration("20240518133520_mig1")]
+    partial class mig1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,11 +27,9 @@ namespace WebApiBook.Migrations
 
             modelBuilder.Entity("Entitiyes.Models.Meeting", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Content")
                         .IsRequired()
@@ -40,14 +38,14 @@ namespace WebApiBook.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("CreateUserId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("CreateUserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("RoomId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("RoomId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
@@ -63,17 +61,15 @@ namespace WebApiBook.Migrations
 
             modelBuilder.Entity("Entitiyes.Models.Room", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("CreateUserId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("CreateUserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -169,13 +165,13 @@ namespace WebApiBook.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "f72543b5-e9a3-4763-9fa7-cb79065d5a3d",
+                            Id = "3a30832b-b689-472f-b19b-164e9722957b",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "b89b67d0-d421-48b4-9ceb-759aaade49d9",
+                            Id = "5c1cf2fe-9ed5-4464-86fd-4a2820afc76f",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

@@ -13,7 +13,7 @@ namespace Repository.Contracts
     {
         Task<IEnumerable<Meeting>> GetAllMeetings(bool trackChanges);
         Task<PagedList<Meeting>> GetAllMeetingsPage(MeetingParameters meetingParameters,bool trackChanges);
-        Task<Meeting> GetOneMeetingById(int id,bool trackChanges);
+        Task<Meeting> GetOneMeetingById(Guid id,bool trackChanges);
         void CreateOneMeeting(Meeting meeting);
         void UpdateOneMeeting(Meeting meeting);
         void DeleteOneMeeting(Meeting meeting);

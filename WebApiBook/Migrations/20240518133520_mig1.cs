@@ -5,14 +5,32 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace WebApiBook.Migrations
+namespace ApiMeetingRoom.Migrations
 {
     /// <inheritdoc />
-    public partial class addRole : Migration
+    public partial class mig1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Meetings",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreateUserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    RoomId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Content = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Meetings", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "RoleClaims",
                 columns: table => new
@@ -40,6 +58,20 @@ namespace WebApiBook.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Roles", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Room",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreateUserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Room", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -131,8 +163,8 @@ namespace WebApiBook.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "b89b67d0-d421-48b4-9ceb-759aaade49d9", null, "Admin", "ADMIN" },
-                    { "f72543b5-e9a3-4763-9fa7-cb79065d5a3d", null, "User", "USER" }
+                    { "3a30832b-b689-472f-b19b-164e9722957b", null, "User", "USER" },
+                    { "5c1cf2fe-9ed5-4464-86fd-4a2820afc76f", null, "Admin", "ADMIN" }
                 });
         }
 
@@ -140,10 +172,16 @@ namespace WebApiBook.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Meetings");
+
+            migrationBuilder.DropTable(
                 name: "RoleClaims");
 
             migrationBuilder.DropTable(
                 name: "Roles");
+
+            migrationBuilder.DropTable(
+                name: "Room");
 
             migrationBuilder.DropTable(
                 name: "UserClaims");

@@ -29,7 +29,7 @@ namespace Services
             return _mapper.Map<MeetingDto>(entity);
         }
 
-        public async Task DeleteOneMeeting(int id, bool trackChanges)
+        public async Task DeleteOneMeeting(Guid id, bool trackChanges)
         {
 
            var entity = await GetOneMeetingAndCheck(id, trackChanges);
@@ -49,14 +49,14 @@ namespace Services
             return (meetingDto, meetingMetaData.MetaData);
         }
 
-        public async Task<MeetingDto> GetOneMeetingById(int id, bool trackChanges)
+        public async Task<MeetingDto> GetOneMeetingById(Guid id, bool trackChanges)
         {
             var entity = await GetOneMeetingAndCheck(id, trackChanges);
             return _mapper.Map<MeetingDto>(entity);
 
         }
 
-        public async Task UpdateOneMeeting(int id, MeetingDto MeetingDto, bool trackChanges)
+        public async Task UpdateOneMeeting(Guid id, MeetingDto MeetingDto, bool trackChanges)
         {
             var entity = await GetOneMeetingAndCheck(id, trackChanges);
             entity = _mapper.Map<Meeting>(MeetingDto);     
@@ -64,10 +64,10 @@ namespace Services
               await  _manager.SaveAsync();
 
         }
-        private async Task<Meeting> GetOneMeetingAndCheck(int id, bool trackChanges){
+        private async Task<Meeting> GetOneMeetingAndCheck(Guid id, bool trackChanges){
             var entity = await _manager.Meeting.GetOneMeetingById(id, trackChanges);
             if (entity is null)
-                throw new MeetingFoundException(id);
+                throw new MeetingFoundException();
 
             return entity;
 

@@ -37,14 +37,14 @@ namespace Presentation.Controller
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetOneMeetingById(int id)
+        public async Task<IActionResult> GetOneMeetingById(Guid id)
         {
           
-            var book =await _manager.MeetingService.GetOneMeetingById(id, false);
-            if (book is null)
-                throw new MeetingFoundException(id);
+            var meeting =await _manager.MeetingService.GetOneMeetingById(id, false);
+            if (meeting is null)
+                throw new MeetingFoundException();
             
-            return Ok(book);
+            return Ok(meeting);
         }
   
        
@@ -58,14 +58,14 @@ namespace Presentation.Controller
 
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateOneMeeting(int id, [FromBody] MeetingDto meetingDto)
+        public async Task<IActionResult> UpdateOneMeeting(Guid id, [FromBody] MeetingDto meetingDto)
         {
           await  _manager.MeetingService.UpdateOneMeeting(id, meetingDto, false);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteOneMeeting(int id)
+        public async Task<IActionResult> DeleteOneMeeting(Guid id)
         {
           await  _manager.MeetingService.DeleteOneMeeting(id, false);
             return NoContent();

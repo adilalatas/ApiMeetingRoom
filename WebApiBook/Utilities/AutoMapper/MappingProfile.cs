@@ -15,6 +15,8 @@ namespace WebApiBook.Utilities.AutoMapper
             CreateMap<RoomDto, Room>();
             CreateMap<Room, RoomDto>();
             CreateMap<UserForRegistrationDto, User>();
+            CreateMap<User, UserDto>();
+            CreateMap<UserDto, User>();
             
         }
     }

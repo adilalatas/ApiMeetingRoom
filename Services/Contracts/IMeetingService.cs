@@ -7,10 +7,10 @@ namespace Services.Contracts
     {
         Task<IEnumerable<MeetingDto>> GetAllMeetings(bool trackChanges);
         Task<(IEnumerable<MeetingDto> meetings,MetaData metaData)> GetAllMeetingsPage(MeetingParameters meetingParameters,bool trackChanges);
-        Task<MeetingDto> GetOneMeetingById(int id, bool trackChanges);
-        Task<MeetingDto> CreateOneMeeting(MeetingDto book);
-        Task UpdateOneMeeting(int id, MeetingDto meetingDto, bool trackChanges);
-        Task DeleteOneMeeting(int id, bool trackChanges);
+        Task<MeetingDto> GetOneMeetingById(Guid id, bool trackChanges);
+        Task<MeetingDto> CreateOneMeeting(MeetingDto meeting);
+        Task UpdateOneMeeting(Guid id, MeetingDto meetingDto, bool trackChanges);
+        Task DeleteOneMeeting(Guid id, bool trackChanges);
    
     }
 }

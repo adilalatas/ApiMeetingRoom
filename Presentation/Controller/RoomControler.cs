@@ -38,14 +38,14 @@ namespace Presentation.Controller
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetOneRoom(int id)
+        public async Task<IActionResult> GetOneRoom(Guid id)
         {
           
-            var book =await _manager.RoomService.GetOneRoomById(id, false);
-            if (book is null)
-                throw new MeetingFoundException(id);
+            var room =await _manager.RoomService.GetOneRoomById(id, false);
+            if (room is null)
+                throw new Exception("Toplantı Odası Bulunamadı");
             
-            return Ok(book);
+            return Ok(room);
         }
   
        
@@ -59,14 +59,14 @@ namespace Presentation.Controller
 
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateOneRoom(int id, [FromBody] RoomDto roomDto)
+        public async Task<IActionResult> UpdateOneRoom(Guid id, [FromBody] RoomDto roomDto)
         {
           await  _manager.RoomService.UpdateOneRoom(id, roomDto, false);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteOneRoom(int id)
+        public async Task<IActionResult> DeleteOneRoom(Guid id)
         {
           await  _manager.RoomService.DeleteOneRoom(id, false);
             return NoContent();

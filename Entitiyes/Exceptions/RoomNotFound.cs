@@ -2,7 +2,7 @@
 {
     public sealed class RoomNotFoundException : NotFoundException
     {
-        public RoomNotFoundException(int id) : base($"Toplantı Odası Bulunamadı: {id}")
+        public RoomNotFoundException(Guid id) : base($"Toplantı Odası Bulunamadı: {id}")
         {
         }
     }

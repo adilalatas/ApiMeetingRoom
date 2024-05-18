@@ -21,15 +21,14 @@ namespace Services
         }
 
         public async Task<Room> CreateOneRoom(RoomDto roomDto)
-        {
-    
-            var entity = _mapper.Map<Room>(roomDto);
-            _manager.Room.CreateOneRoom(entity);
+        {           
+           var entity = _mapper.Map<Room>(roomDto);        
+           _manager.Room.CreateOneRoom(entity);
            await _manager.SaveAsync();
-            return _mapper.Map<Room>(entity);
+           return _mapper.Map<Room>(entity);          
         }
 
-        public async Task DeleteOneRoom(int id, bool trackChanges)
+        public async Task DeleteOneRoom(Guid id, bool trackChanges)
         {
 
            var entity = await GetOneRoomAndCheck(id, trackChanges);
@@ -50,14 +49,14 @@ namespace Services
 
         }
 
-        public async Task<Room> GetOneRoomById(int id, bool trackChanges)
+        public async Task<Room> GetOneRoomById(Guid id, bool trackChanges)
         {
             var entity = await GetOneRoomAndCheck(id, trackChanges);
             return _mapper.Map<Room>(entity);
 
         }
 
-        public async Task UpdateOneRoom(int id, RoomDto MeetingDto, bool trackChanges)
+        public async Task UpdateOneRoom(Guid id, RoomDto MeetingDto, bool trackChanges)
         {
             var entity = await GetOneRoomAndCheck(id, trackChanges);
             entity = _mapper.Map<Room>(MeetingDto);
@@ -65,10 +64,10 @@ namespace Services
               await  _manager.SaveAsync();
 
         }
-        private async Task<Room> GetOneRoomAndCheck(int id, bool trackChanges){
+        private async Task<Room> GetOneRoomAndCheck(Guid id, bool trackChanges){
             var entity = await _manager.Room.GetOneRoomById(id, trackChanges);
             if (entity is null)
-                throw new MeetingFoundException(id);
+                throw new Exception("Toplantı Odası Bulunamadı. ");
 
             return entity;
 

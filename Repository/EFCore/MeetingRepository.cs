@@ -30,7 +30,7 @@ namespace Repository.EFCore
         .ToListAsync();
             return PagedList<Meeting>.ToPagedList(meeting, meetingParameters.PageNumber, meetingParameters.PageSize);
         }
-        public async Task<Meeting> GetOneMeetingById(int id, bool trackChanges) =>await FindByConddition(x=>x.Id.Equals(id),trackChanges).SingleOrDefaultAsync();
+        public async Task<Meeting> GetOneMeetingById(Guid id, bool trackChanges) =>await FindByConddition(x=>x.Id.Equals(id),trackChanges).SingleOrDefaultAsync();
 
 
       
