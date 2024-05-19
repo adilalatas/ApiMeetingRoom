@@ -31,10 +31,11 @@ builder.Services.ConfigureCors();
 builder.Services.ConfigureJWT(builder.Configuration);
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Meeting Rooms",Description="Toplantýlarýnýzý Rahatlýkla Yönetebiliriniz.", Version = "v1" });
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        Description = "JWT Authorization header using the Bearer scheme",
+        
+        Description = "Lütfen Token Giriniz.",
         Type = SecuritySchemeType.Http,
         Scheme = "bearer"
     });
@@ -72,7 +73,7 @@ if (app.Environment.IsProduction())
 }
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Meeting Rooms V1");
     c.RoutePrefix = string.Empty;
     c.OAuthClientId("swagger-client");
 });
