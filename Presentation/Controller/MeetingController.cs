@@ -36,18 +36,28 @@ namespace Presentation.Controller
             return Ok(res.meetings);
         }
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetOneMeetingById(Guid id)
+        [HttpGet("roomId")]
+        public async Task<IActionResult> GetAllMeetingRoomId(Guid id)
         {
           
-            var meeting =await _manager.MeetingService.GetOneMeetingById(id, false);
+            var meeting =await _manager.MeetingService.GetAllMeetingRoomId(id, false);
             if (meeting is null)
                 throw new MeetingFoundException();
             
             return Ok(meeting);
         }
-  
-       
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetOneMeetingById(Guid id)
+        {
+
+            var meeting = await _manager.MeetingService.GetOneMeetingById(id, false);
+            if (meeting is null)
+                throw new MeetingFoundException();
+
+            return Ok(meeting);
+        }
+
+
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost]
         public async Task<IActionResult> CreateOneMeeting([FromBody] MeetingDto meetingDto)

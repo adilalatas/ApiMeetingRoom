@@ -14,14 +14,11 @@ namespace Presentation.Controller.ActionFilters
         {
             var controller = context.RouteData.Values["controller"];
             var action = context.RouteData.Values["action"];
-
-            var param = context.ActionArguments.SingleOrDefault(p=>p.Value.ToString().Contains("Dto")).Value;
-
-            if (param is null) {
+            var paramEntry = context.ActionArguments.SingleOrDefault(p => p.Value?.ToString()?.Contains("Dto") ?? false);
+            if (paramEntry.Value is null) {
                 context.Result = new BadRequestObjectResult($"object is null. Controller : {controller}  Action : {action} ");
                 return;
             }
-
             if (!context.ModelState.IsValid)
                 context.Result = new UnprocessableEntityObjectResult(context.ModelState);
         }

@@ -21,7 +21,7 @@ namespace Presentation.Controller
         {
             _manager = manager;
         }
-
+        
         [HttpGet("all")]
         public async Task<IActionResult> GetAllRoom()
         {
@@ -70,6 +70,11 @@ namespace Presentation.Controller
         {
           await  _manager.RoomService.DeleteOneRoom(id, false);
             return NoContent();
+        }
+        [HttpOptions]
+        public IActionResult GetRoomOptions() {
+            Response.Headers.Add("Allow", "GET, PUT, POST, DELETE, HEAD, OPTIONS");
+            return Ok();
         }
     }
 }

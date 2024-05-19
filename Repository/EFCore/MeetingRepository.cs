@@ -20,17 +20,18 @@ namespace Repository.EFCore
         public void CreateOneMeeting(Meeting meeting) => Create(meeting);   
         public void DeleteOneMeeting(Meeting meeting) => Delete(meeting);
         public void UpdateOneMeeting(Meeting meeting) => Update(meeting);
-        public async Task<IEnumerable<Meeting>> GetAllMeetings(bool trackChanges) => await FindAll(trackChanges).OrderBy(x => x.Id).ToListAsync();
+        public async Task<IEnumerable<Meeting>> GetAllMeetings(bool trackChanges) => await FindAll(trackChanges).Where(x=>x.IsActive).OrderBy(x => x.Id).ToListAsync();
         public async Task<PagedList<Meeting>> GetAllMeetingsPage(MeetingParameters meetingParameters, bool trackChanges)
         {
-          var meeting =  await FindAll(trackChanges)
+          var meeting =  await FindAll(trackChanges).Where(x => x.IsActive)
         .OrderBy(x => x.Id)
         .MeetingSearch(meetingParameters.SearchTerm)
         .ShortMeeting(meetingParameters.OrderBy)
         .ToListAsync();
             return PagedList<Meeting>.ToPagedList(meeting, meetingParameters.PageNumber, meetingParameters.PageSize);
         }
-        public async Task<Meeting> GetOneMeetingById(Guid id, bool trackChanges) =>await FindByConddition(x=>x.Id.Equals(id),trackChanges).SingleOrDefaultAsync();
+        public async Task<Meeting?> GetOneMeetingById(Guid id, bool trackChanges) =>await FindByConddition(x=>x.Id.Equals(id),trackChanges).Where(x => x.IsActive).SingleOrDefaultAsync();
+        public async Task<IEnumerable<Meeting>> GetAllMeetingRoomId(Guid id, bool trackChanges) =>await FindByConddition(x=>x.RoomId.Equals(id),trackChanges).Where(x => x.IsActive).ToListAsync();
 
 
       

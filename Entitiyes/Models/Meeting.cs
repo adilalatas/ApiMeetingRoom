@@ -19,5 +19,6 @@ namespace Entitiyes.Models
         public DateTime EndDate { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
+        public bool IsActive { get; set; } = true;
     }
 }

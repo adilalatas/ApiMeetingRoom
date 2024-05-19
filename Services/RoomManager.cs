@@ -32,6 +32,10 @@ namespace Services
         {
 
            var entity = await GetOneRoomAndCheck(id, trackChanges);
+            var meeeting =await _manager.Meeting.GetAllMeetingRoomId(id,trackChanges);
+            if (meeeting.Count() != 0) {
+                throw new Exception("İçerisinde Toplantı Bulunan Toplantı Odaları Silinemez.");
+            }
             _manager.Room.DeleteOneRoom(entity);
             await _manager.SaveAsync();
         }

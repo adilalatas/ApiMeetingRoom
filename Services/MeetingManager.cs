@@ -33,7 +33,8 @@ namespace Services
         {
 
            var entity = await GetOneMeetingAndCheck(id, trackChanges);
-            _manager.Meeting.Delete(entity);
+            entity.IsActive = false;
+            _manager.Meeting.Update(entity);
             await _manager.SaveAsync();
         }
 
@@ -53,6 +54,12 @@ namespace Services
         {
             var entity = await GetOneMeetingAndCheck(id, trackChanges);
             return _mapper.Map<MeetingDto>(entity);
+
+        }    
+        public async Task<IEnumerable<MeetingDto>> GetAllMeetingRoomId(Guid id, bool trackChanges)
+        {
+            var entity = await _manager.Meeting.GetAllMeetingRoomId(id, trackChanges);
+            return _mapper.Map<List<MeetingDto>>(entity);
 
         }
 
