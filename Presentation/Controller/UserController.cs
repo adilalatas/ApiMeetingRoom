@@ -11,7 +11,7 @@ using System.Text.Json;
 
 namespace Presentation.Controller
 {
-    //[Authorize]
+    [Authorize]
     [ServiceFilter(typeof(LogFilterAttribute))]
     [ApiController]
     [Route("api/User")]

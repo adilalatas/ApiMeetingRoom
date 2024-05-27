@@ -41,7 +41,7 @@ namespace Services
         public async Task<IEnumerable<MeetingDto>> GetAllMeetings( bool trackChanges)
         {
            var meeting =await _manager.Meeting.GetAllMeetings(trackChanges);
-            return _mapper.Map<IEnumerable<MeetingDto>>(meeting);
+            return meeting;
         }   
         public async Task<(IEnumerable<MeetingDto> meetings, MetaData metaData)> GetAllMeetingsPage(MeetingParameters meetingParameters,bool trackChanges)
         {
@@ -63,10 +63,18 @@ namespace Services
 
         }
 
+        public async Task<IEnumerable<MeetingDto>> GetAllMeetingUserId(string id, bool trackChanges)
+        {
+            var entity = await _manager.Meeting.GetAllMeetingUserId(id, trackChanges);
+            return _mapper.Map<List<MeetingDto>>(entity);
+
+        }
+
         public async Task UpdateOneMeeting(Guid id, MeetingDto MeetingDto, bool trackChanges)
         {
             var entity = await GetOneMeetingAndCheck(id, trackChanges);
-            entity = _mapper.Map<Meeting>(MeetingDto);     
+            entity = _mapper.Map<Meeting>(MeetingDto);
+            entity.Id = id;
             _manager.Meeting.UpdateOneMeeting(entity);
               await  _manager.SaveAsync();
 

@@ -1,0 +1,23 @@
+/* .navbar{
+    border-radius: 5px;
+} */
+.navbar {
+     background-color: #484848; 
+     border-radius: 5px;
+    }
+.popover{
+  
+        position: absolute;
+        inset: 0px auto auto 0px;
+        transform: translate(1135px, 64px);
+    
+}
+.popover-body{
+    min-width: 200px;
+}
+.popover-header{
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+/* .navbar .navbar-nav .nav-link { color: #fff; }
+.navbar .navbar-nav .nav-link:hover { color: #fbc531; }
+.navbar .navbar-nav .active > .nav-link { color: #fbc531; } */

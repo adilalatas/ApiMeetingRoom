@@ -24,7 +24,8 @@ namespace ApiMeetingRoom.Migrations
                     StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Content = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsActive = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -163,8 +164,8 @@ namespace ApiMeetingRoom.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "3a30832b-b689-472f-b19b-164e9722957b", null, "User", "USER" },
-                    { "5c1cf2fe-9ed5-4464-86fd-4a2820afc76f", null, "Admin", "ADMIN" }
+                    { "06ca0c35-13ba-48b7-afe1-0a9cb9523112", null, "User", "USER" },
+                    { "7f0afc1d-08b3-4575-a250-86c90217b3fd", null, "Admin", "ADMIN" }
                 });
         }
 

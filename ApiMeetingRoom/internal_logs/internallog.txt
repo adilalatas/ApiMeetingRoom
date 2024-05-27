@@ -378,3 +378,196 @@
 2024-05-19 22:31:28.4422 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
 2024-05-19 22:31:28.4519 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\adila\Source\Repos\adilalatas\ApiMeetingRoom\WebApiBook\nlog.config
 2024-05-19 22:31:28.4519 Info Configuration initialized.
+2024-05-20 09:55:47.6737 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-20 09:55:47.8142 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-20 09:55:47.8389 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-20 09:55:47.8670 Info Configuration initialized.
+2024-05-20 09:55:50.4996 Info AppDomain Shutting down. LogFactory closing...
+2024-05-20 09:55:50.5121 Info LogFactory has been closed.
+2024-05-20 09:58:08.8227 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-20 09:58:08.8837 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-20 09:58:08.9018 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-20 09:58:08.9243 Info Configuration initialized.
+2024-05-20 09:58:16.1854 Info AppDomain Shutting down. LogFactory closing...
+2024-05-20 09:58:16.1990 Info LogFactory has been closed.
+2024-05-20 09:58:50.2565 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-20 09:58:50.3501 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-20 09:58:50.3824 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-20 09:58:50.4162 Info Configuration initialized.
+2024-05-20 10:32:48.6226 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-20 10:32:48.8309 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-20 10:32:49.6045 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-20 10:32:49.6471 Info Configuration initialized.
+2024-05-20 13:22:29.8697 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-20 13:22:30.3856 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-20 13:22:33.4713 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-20 13:22:34.0926 Info Configuration initialized.
+2024-05-20 15:52:45.0570 Info AppDomain Shutting down. LogFactory closing...
+2024-05-20 15:52:45.8108 Info LogFactory has been closed.
+2024-05-20 16:07:46.9942 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-20 16:07:47.1023 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-20 16:07:47.1781 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-20 16:07:47.2138 Info Configuration initialized.
+2024-05-20 17:09:14.7950 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-20 17:09:16.2913 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-20 17:09:16.6855 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-20 17:09:16.9030 Info Configuration initialized.
+2024-05-21 08:45:01.2895 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 08:45:01.4002 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 08:45:01.4827 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 08:45:01.5216 Info Configuration initialized.
+2024-05-21 09:26:01.6079 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 09:26:01.7437 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 09:26:01.7816 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 09:26:01.8204 Info Configuration initialized.
+2024-05-21 09:46:07.3952 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 09:46:07.5596 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 09:46:08.1903 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 09:46:08.2346 Info Configuration initialized.
+2024-05-21 14:16:35.1657 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 14:16:35.3979 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 14:16:35.4260 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 14:16:35.4661 Info Configuration initialized.
+2024-05-21 14:20:52.2436 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 14:20:53.9932 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 14:20:55.3088 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 14:21:29.5422 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 14:21:29.6851 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 14:21:30.2567 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 14:21:30.5604 Info Configuration initialized.
+2024-05-21 14:48:48.0295 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 14:48:48.0899 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 14:48:48.1196 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 14:48:48.1371 Info Configuration initialized.
+2024-05-21 14:48:51.9852 Info AppDomain Shutting down. LogFactory closing...
+2024-05-21 14:48:52.0017 Info LogFactory has been closed.
+2024-05-21 14:49:18.7401 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 14:49:18.7967 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 14:49:18.8210 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 14:49:18.8402 Info Configuration initialized.
+2024-05-21 14:49:22.3833 Info AppDomain Shutting down. LogFactory closing...
+2024-05-21 14:49:22.3833 Info LogFactory has been closed.
+2024-05-21 14:49:41.7622 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 14:49:41.8783 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 14:49:41.9886 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 14:49:42.4130 Info Configuration initialized.
+2024-05-21 15:44:48.8502 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 15:44:48.9952 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 15:44:49.0464 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 15:44:49.1192 Info Configuration initialized.
+2024-05-21 15:49:50.7081 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 15:49:50.8719 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 15:49:50.9158 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 15:49:50.9563 Info Configuration initialized.
+2024-05-21 16:41:10.1163 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 16:41:10.4812 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 16:41:11.5153 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 16:41:11.7215 Info Configuration initialized.
+2024-05-21 16:44:10.6207 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 16:44:10.9368 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 16:44:11.0032 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 16:44:11.0481 Info Configuration initialized.
+2024-05-21 17:00:46.3474 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 17:00:46.4993 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 17:00:46.5513 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 17:00:46.5984 Info Configuration initialized.
+2024-05-21 17:09:10.1379 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 17:09:10.6032 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 17:09:15.0550 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 17:09:15.1058 Info Configuration initialized.
+2024-05-21 17:10:27.0276 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 17:10:28.0461 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 17:10:28.1065 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 17:10:28.2190 Info Configuration initialized.
+2024-05-21 17:18:26.3568 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-21 17:18:26.4789 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-21 17:18:26.5281 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-21 17:18:26.5688 Info Configuration initialized.
+2024-05-22 08:47:36.7419 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-22 08:47:37.1890 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-22 08:47:38.6057 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-22 08:47:38.7019 Info Configuration initialized.
+2024-05-22 11:44:17.3319 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-22 11:44:17.4816 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-22 11:44:17.5272 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-22 11:44:17.5621 Info Configuration initialized.
+2024-05-22 11:49:05.9895 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-22 11:49:06.3231 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-22 11:49:06.4104 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-22 11:49:06.4479 Info Configuration initialized.
+2024-05-23 08:40:19.6402 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 08:40:19.8164 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 08:40:19.9135 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 08:40:20.0279 Info Configuration initialized.
+2024-05-23 09:07:56.5764 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 09:07:56.8403 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 09:07:56.9064 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 09:07:56.9770 Info Configuration initialized.
+2024-05-23 09:54:06.0875 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 09:54:06.3005 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 09:54:06.3581 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 09:54:06.3957 Info Configuration initialized.
+2024-05-23 10:00:48.3467 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 10:00:48.4650 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 10:00:48.5009 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 10:00:48.5397 Info Configuration initialized.
+2024-05-23 10:04:53.3530 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 10:04:53.4642 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 10:04:53.5072 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 10:04:53.5468 Info Configuration initialized.
+2024-05-23 10:15:21.2085 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 10:15:21.3184 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 10:15:22.4755 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 10:15:22.5214 Info Configuration initialized.
+2024-05-23 10:18:00.8825 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 10:18:01.1325 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 10:18:02.1015 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 10:18:02.3768 Info Configuration initialized.
+2024-05-23 10:23:57.2585 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 10:23:58.1189 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 10:24:02.5220 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 10:24:02.5624 Info Configuration initialized.
+2024-05-23 11:23:48.7499 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 11:23:48.8605 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 11:23:48.9014 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 11:23:48.9337 Info Configuration initialized.
+2024-05-23 13:19:04.5441 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 13:19:04.6644 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 13:19:04.7084 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 13:19:05.9390 Info Configuration initialized.
+2024-05-23 13:59:23.8472 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 13:59:23.9766 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 13:59:24.0902 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 13:59:24.1332 Info Configuration initialized.
+2024-05-23 14:12:17.0901 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 14:12:17.2327 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 14:12:17.7362 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 14:12:19.5696 Info Configuration initialized.
+2024-05-23 16:43:27.5001 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 16:43:27.8110 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 16:43:27.8809 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 16:43:27.9469 Info Configuration initialized.
+2024-05-23 20:11:27.8815 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 20:11:28.1027 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 20:11:28.1413 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 20:11:28.2251 Info Configuration initialized.
+2024-05-23 20:24:37.8789 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-23 20:24:38.0008 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-23 20:24:38.0676 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-23 20:24:38.5776 Info Configuration initialized.
+2024-05-24 08:49:36.9073 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-24 08:49:37.0325 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-24 08:49:37.2039 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-24 08:49:37.2633 Info Configuration initialized.
+2024-05-24 09:34:53.0965 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-24 09:34:53.2044 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-24 09:34:53.2415 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-24 09:34:53.2820 Info Configuration initialized.
+2024-05-24 15:03:50.2419 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-24 15:03:50.4353 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-24 15:03:50.7027 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-24 15:03:50.9328 Info Configuration initialized.
+2024-05-24 15:50:08.9401 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-05-24 15:50:09.0243 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-05-24 15:50:09.0473 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\stjIlayda.Yegen\source\repos\ApiMeetingRoom\WebApiBook\nlog.config
+2024-05-24 15:50:09.0876 Info Configuration initialized.

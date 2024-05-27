@@ -12,8 +12,8 @@ using Repository.EFCore;
 namespace ApiMeetingRoom.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20240519193116_mig2")]
-    partial class mig2
+    [Migration("20240520065550_mig1")]
+    partial class mig1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -168,13 +168,13 @@ namespace ApiMeetingRoom.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "64a18dc3-3714-4959-8d82-068bdb54a58e",
+                            Id = "06ca0c35-13ba-48b7-afe1-0a9cb9523112",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "0e1fb5d4-5545-4f65-9c86-5eaf35cfc3d0",
+                            Id = "7f0afc1d-08b3-4575-a250-86c90217b3fd",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

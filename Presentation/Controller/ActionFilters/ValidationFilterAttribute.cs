@@ -8,10 +8,13 @@ using System.Threading.Tasks;
 
 namespace Presentation.Controller.ActionFilters
 {
-    public class ValidationFilterAttribute : ActionFilterAttribute
+    public class ValidationFilterAttribute : ActionFilterAttribute,IAuthorizationFilter
     {
         public override void OnActionExecuting(ActionExecutingContext context)
         {
+          
+
+     
             var controller = context.RouteData.Values["controller"];
             var action = context.RouteData.Values["action"];
             var paramEntry = context.ActionArguments.SingleOrDefault(p => p.Value?.ToString()?.Contains("Dto") ?? false);
@@ -21,6 +24,21 @@ namespace Presentation.Controller.ActionFilters
             }
             if (!context.ModelState.IsValid)
                 context.Result = new UnprocessableEntityObjectResult(context.ModelState);
+        }
+        public void OnAuthorization(AuthorizationFilterContext context)
+        {
+            var token = context.HttpContext.Request.Headers["Authorization"].ToString();
+
+         
+            if (string.IsNullOrEmpty(token) || !IsTokenValid(token))
+            {
+              
+                context.Result = new UnauthorizedResult();
+            }
+        }
+        private bool IsTokenValid(string token)
+        {
+            return !string.IsNullOrEmpty(token) && token != "expired_token";
         }
     }
 }

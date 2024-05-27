@@ -10,7 +10,7 @@ using System.Text.Json;
 
 namespace Presentation.Controller
 {
-    //[Authorize]
+    [Authorize]
     [ServiceFilter(typeof(LogFilterAttribute))]
     [ApiController]
     [Route("api/Meeting")]
@@ -44,6 +44,17 @@ namespace Presentation.Controller
             if (meeting is null)
                 throw new MeetingFoundException();
             
+            return Ok(meeting);
+        }
+
+        [HttpGet("userId")]
+        public async Task<IActionResult> GetAllMeetingUserId(string id)
+        {
+
+            var meeting = await _manager.MeetingService.GetAllMeetingUserId(id, false);
+            if (meeting is null)
+                throw new MeetingFoundException();
+
             return Ok(meeting);
         }
         [HttpGet("{id}")]

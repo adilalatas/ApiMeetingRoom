@@ -12,8 +12,8 @@ using Repository.EFCore;
 namespace ApiMeetingRoom.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20240518133520_mig1")]
-    partial class mig1
+    [Migration("20240521114851_mig2")]
+    partial class mig2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,11 +38,15 @@ namespace ApiMeetingRoom.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("CreateUserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreateUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<Guid>("RoomId")
                         .HasColumnType("uniqueidentifier");
@@ -68,8 +72,9 @@ namespace ApiMeetingRoom.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("CreateUserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreateUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -165,13 +170,13 @@ namespace ApiMeetingRoom.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "3a30832b-b689-472f-b19b-164e9722957b",
+                            Id = "7ed35d56-c2e5-4bbd-827a-7322bf26e251",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "5c1cf2fe-9ed5-4464-86fd-4a2820afc76f",
+                            Id = "03b407fe-0564-4e99-8b74-bc95d4be0fbb",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

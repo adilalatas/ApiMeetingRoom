@@ -1,0 +1,21 @@
+.clock {
+    /* background: #70C1B3; */
+    /* color: #70C1B3; */
+    color:aliceblue;
+    border-radius: 5px;
+    font-size: 35px;
+    /* -webkit-text-stroke: 1px black;
+    text-shadow: 0 0 2px #fff; */
+  }
+.bitissaat{
+    color:aliceblue;
+      border-radius: 5px;
+      font-size: 30px;
+}
+.addicon{
+  opacity: 35%;
+}
+ 
+.addicon:hover{
+  opacity: 70%;
+}

@@ -47,15 +47,19 @@ namespace Services
             _user.RefreshToken = refreshToken;
 
             if (populateExp)
-                _user.RefreshTokenExpiryTime = DateTime.Now.AddDays(7);
+                _user.RefreshTokenExpiryTime = DateTime.Now.AddDays(1);
 
             await _userManager.UpdateAsync(_user);
+            var roles = await _userManager
+               .GetRolesAsync(_user);
 
             var accessToken = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
             return new TokenDto()
             {
                 AccessToken = accessToken,
-                RefreshToken = refreshToken
+                RefreshToken = refreshToken,
+                LoginUser = _user,
+                LoginUserRole = roles[0],
             };
         }
 
@@ -94,7 +98,8 @@ namespace Services
         {
             var claims = new List<Claim>()
             {
-                new Claim(ClaimTypes.Name, _user.UserName)
+                new Claim(ClaimTypes.Name, _user.UserName),
+                
             };
 
             var roles = await _userManager

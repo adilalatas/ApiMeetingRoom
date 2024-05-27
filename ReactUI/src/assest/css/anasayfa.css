@@ -1,0 +1,48 @@
+.addmeeting {
+    background: linear-gradient(125deg, #66C55B 25%, rgba(255, 255, 255, 0.5) 106%);
+    border:0px;
+
+}
+
+.aktifroom {
+    background: linear-gradient(125deg, #EF6F6C 25%, rgba(255, 255, 255, 0.5) 106%);
+
+    border:0px;
+}
+.beklemederoom{
+    background: linear-gradient(125deg, #66C55B 25%, rgba(255, 255, 255, 0.5) 106%);
+
+    border:0px;
+}
+/* @media (max-height: 650px) {
+    .meeting {
+        height: 245px;
+    }
+}
+FFDC77
+@media (min-height: 650px) {
+    .anasayfa .meeting {
+        height: 350px;
+    }
+}
+
+@media (min-height: 760px) {
+    .anasayfa .meeting {
+        height: 550px;
+    }
+}
+
+.anasayfa .accordion {
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.05rem #ffc107;
+        --bs-accordion-border-color: #ffc107;
+  --bs-accordion-active-color: initial;
+     --bs-accordion-active-bg: initial; 
+}
+
+.hizlitoplanti{
+    background-color: white;
+} */
+
+
+  
+ 

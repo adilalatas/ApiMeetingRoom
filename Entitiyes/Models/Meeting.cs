@@ -11,7 +11,7 @@ namespace Entitiyes.Models
     {
         public Guid Id { get; set; }
         [ForeignKey("User")]
-        public Guid CreateUserId { get; set; }
+        public string CreateUserId { get; set; }
         [ForeignKey("Room")]
         public Guid RoomId { get; set; }
         public DateTime CreateDate { get; set; }

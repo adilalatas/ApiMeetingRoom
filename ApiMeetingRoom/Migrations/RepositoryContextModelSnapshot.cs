@@ -35,8 +35,9 @@ namespace ApiMeetingRoom.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("CreateUserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreateUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
@@ -68,8 +69,9 @@ namespace ApiMeetingRoom.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("CreateUserId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("CreateUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -165,13 +167,13 @@ namespace ApiMeetingRoom.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "64a18dc3-3714-4959-8d82-068bdb54a58e",
+                            Id = "7ed35d56-c2e5-4bbd-827a-7322bf26e251",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "0e1fb5d4-5545-4f65-9c86-5eaf35cfc3d0",
+                            Id = "03b407fe-0564-4e99-8b74-bc95d4be0fbb",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

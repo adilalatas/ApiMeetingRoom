@@ -33,7 +33,7 @@ namespace Services
 
         public async Task<UserDto> GetOneUserById(Guid id, bool trackChanges)
         {
-            var user = await _manager.User.GetAllUsers(trackChanges);
+            var user = await _manager.User.GetOneUserById(id,trackChanges);
             return _mapper.Map<UserDto>(user);
 
         }
